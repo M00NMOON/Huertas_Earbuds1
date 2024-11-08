@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet"/>
     <title>Huertas_TM_Earbuds</title>
 </head>
 <body>
-    
+       <!-- <model-viewer> HTML element -->
+    <model-viewer id="model" src="model/Earbuds-modleviewer.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="0.57" environment-image="images/aircraft_workshop_01_1k.hdr" shadow-softness="1" exposure="1.15">
+
+        <button class="Hotspot" slot="hotspot-1" data-position="-0.003906275904599821m 1.8119973635984326m 0.08773478522531297m" data-normal="-0.0039767557530261686m -0.013579753481828946m 0.9998998828428043m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-1"></div>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-2" data-position="0.0907414311141174m 2.031335315484491m -0.33030330241758016m" data-normal="0.22831500680441386m 0.02497553357203201m -0.9732669111763191m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-2"></div>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-3" data-position="0.17490838144053283m 2.115389393568889m -0.3114404340259751m" data-normal="0.6664575289029872m 0.7376053734517658m 0.10850195953809001m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-3"></div>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-4" data-position="-0.012373342867055548m 1.5835587748167885m -0.11370293409323351m" data-normal="1.1705460917038344e-16m -0.293941693296405m -0.9558233523732522m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-4"></div>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-5" data-position="-0.22565828905173668m 1.9694624295405028m 0.061295127899058416m" data-normal="-0.9006597398426741m 0.05699440018784714m 0.4307710196540087m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-5"></div>
+        </button>
+        
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="images/ar_hand_prompt.png">
+        </div>
+      </model-viewer>          
+          <!-- Loads <model-viewer> for browsers: -->
+          <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+          <script src="js/main.js"></script>
 </body>
 </html>
